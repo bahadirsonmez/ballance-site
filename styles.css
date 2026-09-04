@@ -44,7 +44,7 @@ a{color:inherit}
 .platform>div,.support>div{max-width:720px}
 .platform h2,.support h2{font-size:clamp(2.5rem,5vw,4.5rem)}
 .platform p,.support p{color:var(--muted)}
-footer{max-width:var(--max);margin:auto;padding:2rem 1.5rem 3rem;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr auto auto;gap:2rem;align-items:center;color:var(--muted);font-size:.82rem}
+footer{max-width:var(--max);margin:auto;padding:2rem 1.5rem 3rem;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:1.25rem 2rem;align-items:center;color:var(--muted);font-size:.82rem}.more-apps{grid-column:1/-1;margin:0}.content-hero{min-height:auto;padding-bottom:4rem}.prose{max-width:860px}.prose h2{font-size:clamp(2rem,5vw,4rem);margin-top:4rem}.prose h3{font-size:1.35rem;margin-top:2rem}.prose p,.prose li{color:var(--muted)}.prose img{display:block;width:100%;height:auto;border:7px solid #543421;border-radius:18px;box-shadow:8px 9px 0 rgba(64,35,19,.22);margin:2.5rem 0}.faq details{border-top:1px solid var(--line);padding:1rem 0}.faq summary{cursor:pointer;font-weight:800}
 footer>div{display:flex;gap:1rem}
 footer a{text-underline-offset:.25em}
 @media(max-width:800px){.nav nav>a:not(.nav-cta){display:none}
