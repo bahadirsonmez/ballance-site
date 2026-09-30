@@ -50,7 +50,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:700;font-variation-settings:"SOFT"
 /* ---------- Hero ---------- */
 .hero{position:relative;min-height:100svh;padding:8.5rem var(--side) 6rem;background:var(--walnut);color:var(--white);display:grid;grid-template-columns:.9fr 1.3fr;gap:clamp(2rem,5vw,4rem);align-items:center;overflow:hidden}
 /* a marble rolls along the bottom edge, a brick block drifts above */
-.hero:before{content:"";position:absolute;bottom:1.2rem;left:-10%;width:64px;height:64px;border-radius:50%;background:linear-gradient(90deg,var(--marble) 0 32%,var(--sky) 32% 52%,var(--marble) 52%);border:1.5px solid var(--ink);animation:roll 18s linear infinite;pointer-events:none}
+.hero:before{content:"";position:absolute;bottom:-1px;left:-10%;width:64px;height:64px;box-sizing:border-box;border-radius:50%;background:linear-gradient(90deg,var(--marble) 0 41%,var(--sky) 41% 59%,var(--marble) 59%);border:1.5px solid var(--ink);animation:roll 18s linear infinite;pointer-events:none}
 .hero:after{content:"";position:absolute;width:clamp(70px,8vw,120px);aspect-ratio:1;background:var(--brick);right:5%;top:12%;animation:drift 11s var(--ease) infinite alternate;pointer-events:none}
 @keyframes roll{to{left:108%;transform:rotate(1080deg)}}
 @keyframes drift{from{transform:translate3d(0,0,0) rotate(0)}to{transform:translate3d(-3vw,4vh,0) rotate(14deg)}}
