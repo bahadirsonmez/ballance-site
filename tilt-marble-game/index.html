@@ -19,7 +19,7 @@
 <meta name="twitter:description" content="A precision marble game built around motion, momentum, and replayable courses.">
 <meta name="twitter:image" content="https://ballance.bahadirsonmez.com/assets/og.jpg">
   <link rel="icon" href="../assets/icon.png">
-<link rel="stylesheet" href="../styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..800,100,0&family=Inter:wght@400;600;700&display=swap"><link rel="stylesheet" href="../styles.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Ballance","applicationCategory":"GameApplication","operatingSystem":"iOS 16 or later; iPadOS 16 or later","url":"https://ballance.bahadirsonmez.com/","downloadUrl":"https://apps.apple.com/app/id6757181645","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Person","name":"Bahadir Sonmez","url":"https://bahadirsonmez.com/"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do you control Ballance?","acceptedAnswer":{"@type":"Answer","text":"Ballance uses responsive tilt controls: move your iPhone or iPad to guide the marble, manage momentum, and line up each obstacle."}},{"@type":"Question","name":"Can I play Ballance with other people?","acceptedAnswer":{"@type":"Answer","text":"Yes. Ballance supports online multiplayer and nearby local play, alongside solo time trials."}},{"@type":"Question","name":"Does Ballance have the same course every time?","acceptedAnswer":{"@type":"Answer","text":"No. Procedurally changing obstacle layouts make each run a fresh route to read and master."}},{"@type":"Question","name":"Is Ballance related to an older PC game?","acceptedAnswer":{"@type":"Answer","text":"No. Ballance is an original iOS and iPadOS title by independent developer Bahadir Sonmez."}}]}]}</script>
 </head>
 <body>
@@ -27,7 +27,7 @@
 <header class="nav">
 <a class="brand" href="../">
 <img src="../assets/icon.png" alt="" width="38" height="38">Ballance</a>
-<nav aria-label="Primary">
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span class="sr-only">Toggle navigation</span><span></span><span></span></button><nav id="site-nav" aria-label="Primary" data-nav>
 <a href="../#game">Features</a>
 <a href="../#gallery">Gallery</a>
 <a class="nav-cta" href="https://apps.apple.com/app/id6757181645">Get the game</a>
@@ -53,18 +53,18 @@
 <h2>Motion controls that reward precision</h2>
 <p>Tilt your iPhone or iPad to steer. Gentle movement helps you hold a narrow line; a stronger tilt builds the speed needed for ramps and moving hazards. The direct control makes every save feel earned and every missed turn easy to understand.</p>
 <img class="app-store-shot" src="../assets/screens/iphone/3.jpg" alt="Ballance App Store screenshot showing tilt-controlled gameplay and difficulty" loading="lazy" width="416" height="900">
-<h2>A different line to learn each run</h2>
-<p>Procedurally changing obstacle layouts keep the route from becoming routine. Three difficulty levels let you choose a relaxed introduction or a demanding precision run. Daily and weekly Game Center leaderboards give every attempt a clear target.</p>
+<h2>A new challenge around every bend</h2>
+<p>Career Mode takes you through 88 levels of handcrafted challenges, with bumpers, moving belts, and propellers to read and outsmart. Time Attack and Endless Climb give fast runs a clear target, and daily and weekly Game Center leaderboards reward every improvement.</p>
 <h3>Play the way you want</h3>
 <ul>
 <li>
-<strong>Solo time trials:</strong> learn the obstacles and improve your finish.</li>
+<strong>Career, Time Attack, and Endless Climb:</strong> learn the obstacles and improve your finish—offline, anywhere.</li>
 <li>
-<strong>Online multiplayer:</strong> race other players over the same course.</li>
+<strong>Online multiplayer:</strong> race real opponents over the same course.</li>
 <li>
-<strong>Nearby local play:</strong> challenge a friend on the same network.</li>
+<strong>Nearby local multiplayer:</strong> challenge a friend on the same network.</li>
 <li>
-<strong>Personal style:</strong> unlock more than 25 themes and 19 ball styles.</li>
+<strong>Personal style:</strong> earn diamonds and unlock themes like Vintage Wood, Neon Arcade, and Galaxy Space, plus collectible ball styles.</li>
 </ul>
 <img class="app-store-shot" src="../assets/screens/iphone/5.jpg" alt="Ballance App Store screenshot showing changing courses and themes" loading="lazy" width="416" height="900">
 <h2>An original mobile marble game</h2>
@@ -80,8 +80,8 @@
 <p>Yes. Choose online multiplayer or nearby local play, or focus on solo time trials.</p>
 </details>
 <details>
-<summary>Does the course change?</summary>
-<p>Yes. Procedurally changing layouts create a fresh route for each run.</p>
+<summary>Can I play offline?</summary>
+<p>Yes. Career Mode, Time Attack, and Endless Climb are playable offline. Online and nearby multiplayer need a connection or local network.</p>
 </details>
 <details>
 <summary>Is Ballance related to an older PC game?</summary>
@@ -105,6 +105,7 @@
 </p>
 <p>© 2026 Bahadir Sonmez.</p>
 </footer>
+<script src="../script.js" defer></script>
 <!-- Cloudflare Web Analytics -->
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"725a9fe7e49840a28d1a4b405dc2980f"}'>
 </script>
